@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastre-se</title>
+<meta name="viewport" content="width=device-width inicial-scale=1.0">
+<link rel="stylesheet" href="cadastre.css">
+<link rel="stylesheet" href="reset.css">
+<style>
+</style>
+</head>
+<body>
+	<main>
+	<form class="container">
+		
+				<legend class="titulo">Cadastro</legend>
+				<legend id="camposObrigatorios">*Campos obrigatórios</legend>
+				<label for="nomesobrenome">*Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">*Email</label>
+				<input type="email" id="email" class="input-padrao" required>
+
+				<label for="telefone">*Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) XXXXX-XXXX">
+
+				<label for="nascimento">*Data de Nascimento</label>
+				<input type="number" id="dataNascimento" class="input-padrao" required placeholder="dd/mm/aaaa">
+
+				<label for="cpf">*CPF</label>
+				<input type="number" id="cpfTitular" class="input-padrao">
+
+				<legend>Endereço de Entrega</legend>
+
+				<label for="cep" id="naoLembro"><a href="buscacepinter.correios.com.br/app/endereco/index.php">Não lembro meu CEP</a></label>
+				<input type="text" id="rua" class="input-padrao" required placeholder="00000-000">
+
+				<label for="complemento">Complemento</label>
+				<input type="text" id="complemento" class="input-padrao" required>
+				
+				<label for="recebedor">Entregar para quem?</label>
+				<input type="text" id="complemento" class="input-padrao" required>
+
+				<label for="message">Observações para o entregador</label>
+				<textarea cls="70" rows="10 id=mensagem"class="input-padrao"></textarea>
+									
+				<label class="checkbox"><input type="checkbox"checked>Quero receber novidades por e-mail</label>
+				<label class="checkbox"><input type="checkbox">Quero receber novidades por Whats App</label>
+				<label class="checkbox" id="politica"><input type="checkbox" checked>Li e aceito a <a href="footer/privacidade.html" class="politica">Política de Privacidade</a></label>
+
+				<label for="senha"> *Crie sua senha com 8 dígitos</label>
+				<input type="text" id="password" class="input-padrao">
+
+				<label for="confirmeSenha"> *Confirme sua senha</label>
+				<input type="text" id="passwordConfirm" class="input-padrao">
+
+				<input type="submit" value="Enviar" class="enviar">
+			
+	</form>
+</main>
+</body>
+</html>
+
+				
+

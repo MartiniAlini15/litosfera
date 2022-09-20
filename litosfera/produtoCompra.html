@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Sapatilha</title>
+<meta name="viewport" content="width=device-width inicial-scale=1.0">
+<link rel="stylesheet" href="produtoCompra.css">
+<link rel="stylesheet" href="reset.css">
+ 
+</head>
+<header>
+<img class="logo" src="desenho.png">
+</header>
+<body>
+<div class="container">
+
+		<img class="sapatoEscolhido" src="scarpinPreto.png">
+		<form action="/action_page.php">
+  		<label for="calcado">Tamanho</label>
+  		<select name="tamanho" id="tamanho">
+    	<option value="number">35</option>
+    	<option value="number">36</option>
+    	<option value="number">37</option>
+    	<option value="number">38</option>
+    	<option value="number">39</option>
+  	</select>
+  	<br><br>
+	</form>
+
+	<form>
+  	 	<label for="quantidade">quantidade</label>
+  		<select name="quantidade" id="quantidade">
+   	 	<option value="number">1</option>
+    	<option value="number">2</option>
+    	<option value="number">3</option>
+    	<option value="number">4</option>
+    	<option value="number">5</option>
+    	<option value="number">6</option>
+    	<option value="number">7</option>
+    	<option value="number">8</option>
+    	<option value="number">9</option>
+    	<option value="number">10</option>
+  		</select>
+  		<br><br>
+	</form>
+ 	 <ul class="ulPreco1">
+  		<li class="preco1">Total</li>
+  		<li class="preco1">R$ 290,00</li>
+  		<li class="preco1"><a  id="excluir" href="#"> Excluir</a></li>
+  	</ul>
+  	<ul class="pagamento">
+ 		
+ 		
+  	<li><label for="ConsultarFrete">Frete para</label></li>
+	<li><input type="text" id="frete" class="frete" required placeholder="CEP somente números">
+	<input type="submit" value="ok" class="ok"></li>
+	<li class="esqueciCep"><a  href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei o CEP</a></li>
+
+	<li>Total com Frete</li>
+	<li class="preco2">R$ 290,00</li>
+	
+  <li><input type="submit" value="Concluir Compra"></li>
+  <li><a class="continuar" href="#">Continuar comprando</a></li>
+  </div>
+ 
+  	<ul class="outros">
+  		<li>Você também vai adorar</li>
+	</ul>
+
+  <footer class="container">
+  	
+  	<img class="produto" src="scarpinPreto.png">
+  	<img class="produto" src="scarpinPreto.png">
+  	<img class="produto" src="scarpinPreto.png">
+  	<img class="produto" src="scarpinPreto.png">
+  	<img class="produto" src="scarpinPreto.png">
+  	<img class="produto" src="scarpinPreto.png">
+  </footer>
+
+</body>
+<script type="text/javascript">#excluir.addEventListener("click", function()
+{
+} </script>
+</html>

@@ -1,0 +1,150 @@
+body{
+	color: #664d00;
+}
+
+header{
+	background-image: linear-gradient( #2d5986,#f2f2f2, #737373);
+}
+
+.logo{
+	padding-left: 6.25rem;
+	padding-right:1.25rem;
+	padding-top: 1.875rem;
+	padding-bottom:1.875rem; 
+	width: 18.75rem;
+	height: 9.5rem;
+}
+
+div.container{
+	display:flex;
+	justify-content: space-around;
+	direction: row;
+	align-items: center;
+	margin-top: 50px;
+	margin-left:50px;
+	margin-bottom:50px;
+	font-family:verdana;
+}
+
+ul{
+	padding-top: 10px;
+}
+ 
+.preco1{
+	margin-bottom: 10px;
+	color:#664d00;
+}
+
+label, input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #664d00;
+}
+
+#quantidade{
+	color: #664d00;
+	border-color:#664d00;
+	border-style: solid;
+	border-width: 0.187rem;
+	border-radius: 0.212rem;
+}
+
+#tamanho{
+	color: #664d00;
+	border-color:#664d00;
+	border-style: solid;
+	border-width: 0.187rem;
+	border-radius: 0.212rem;
+}
+.continuar{
+	margin-top: 0.625rem;
+
+}
+input{
+	border-color:#664d00;
+	border-style: solid;
+	border-width: 0.187rem;
+	border-radius: 0.212rem;
+}
+
+.preco2{
+	margin-top: 10px;
+	color:#664d00;
+}
+
+#frete.frete{
+	width: 196px;
+}
+
+
+footer.container{
+	display:flex;
+	justify-content: center;
+	font-family:verdana;
+ 	background: linear-gradient(#f2f2f2, #737373);      
+}
+
+.produto{
+		display:flex;
+		justify-content: center;
+		direction:row;
+		margin: 50px 10px 50px;
+}
+
+.outros{
+	text-align: center;
+	padding-top:20px;
+	background: #f2f2f2;
+	font-family: verdana;
+	margin: 0 auto;
+
+}
+
+
+.esqueciCep{
+	margin-bottom: 10px;
+}
+
+a{
+ color: #664d00;
+}
+
+/*faz sumir ou aparecer algo só na tela pequena*/
+@media screen and (max-width: 768px){
+
+
+
+	div.container{
+	display: inherit;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+	margin-top: 2rem;
+	}
+
+	.sapatoEscolhido{
+	grid-column: 1;
+	grid-row: 1/ span 3;
+	}
+
+	form{
+	grid-column: 2;
+ 	}
+
+
+	.ulPreco1{
+	grid-column: 2;
+
+	}
+	.pagamento{
+	margin-top: 3rem;
+	}
+
+#quantidade, #tamanho, .pagamento, .ulPreco1, .outros, .frete, .ok, input, form label{
+	font-size: 20px;
+
+}
+
+
+
+}
